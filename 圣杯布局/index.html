@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>双飞翼布局</title>
+  <title>圣杯布局</title>
   <style>
     * {
       margin: 0;
       padding: 0;
     }
     .container {
+      padding: 0 200px 0 150px;
       height: 600px;
-    }
-    .main-inner {
-      margin-left:150px;
-      margin-right: 200px;
-      height: 100%;
-      word-break: break-all;
     }
     .main, .sub, .extra {
       float: left;
@@ -27,12 +22,16 @@
       background: green;
     }
     .sub {
+      position: relative;
+      left: -150px;
       width: 150px;
       margin-left: -100%;
       background: gray
     }
     
     .extra {
+      position: relative;
+      right: -200px;
       width: 200px;
       margin-left: -200px;
       background: blue;
@@ -42,9 +41,7 @@
 <body>
   <section class="container">
     <div class="main">
-      <div class="main-inner">
-        main-inner
-      </div>
+      dfsjfdsf
     </div>
     <div class="sub">
       sub 栏
