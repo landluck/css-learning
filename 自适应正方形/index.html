@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>square</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .item {
+      margin-bottom: 15px;
+    }
+    .square-1 {
+      padding-bottom: 100%;
+      width: 100%;
+      height: 0;
+      background: gray;
+    }
+    .square-2 {
+      position: relative;
+      padding-top: 100%;
+      width: 100%;
+      height: 0;
+      background: gray;
+    }
+    .inner-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="square-1 item">
+    大秦帝国第三军团军团长
+  </div>
+  <div class="square-2 item">
+    <div class="inner-2">
+        大秦帝国第三军团军团长
+    </div>
+  </div>
+</body>
+</html>
